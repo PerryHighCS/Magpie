@@ -1,0 +1,6 @@
+language: java
+
+script:
+  - javac *.java -Xlint
+  - ls -l *.class
+  - timeout 3s java Main conv.txt
